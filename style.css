@@ -2,7 +2,7 @@
 
 body {
   font-family: Montserrat, sans-serif;
-  padding-top: 70px;
+  /* padding-top: 70px; */
   background-color: #eee;
   margin: 0;
 }
@@ -11,7 +11,7 @@ body {
   box-sizing: border-box;
 }
 
-nav {
+/* nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -37,7 +37,15 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
-}
+} */
+
+/* @media (min-width: 768px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+} */
 
 #main {
   text-align: center;
@@ -144,6 +152,39 @@ h4 {
 
 .video-list {
   margin-top: 50px;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: 		#552c56;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: 	#99aab5;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 #follow {
